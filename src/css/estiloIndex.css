@@ -84,7 +84,7 @@ h1 {
     text-align: center;
     color: #e7b8d7;
     background-color: #331729;
-    padding: 20px;
+    padding: 10px;
     border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -123,22 +123,65 @@ h1 {
 }
 
 .mi-card {
-    width: 22rem;
-    background-color: #2d2d2d;
-    color: #ffffff;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 22rem !important;
+    height: 38rem !important;
+    background-color: #11010b !important;
+    color: #ffffff !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s, box-shadow 0.3s !important;
 }
 
 .mi-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+.card-img-top {
+    width: 100%; 
+    height: 20rem; 
+    object-fit: cover; 
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
+}
+
+.horizontal-card {
+    width: 80rem !important;
+    height: 20rem !important;
+    background-color: #11010b !important;
+    color: #ffffff !important;
+    margin: 10px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: transform 0.3s, box-shadow 0.3s !important;
+    overflow: hidden; 
+}
+
+.horizontal-card:hover {
+    transform: scale(1.05) !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+
+.horizontal-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px; 
+}
+
+
+#card-img {
+    width: 100%; 
+    height: 20rem; 
+    object-fit: cover; 
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
 }
 
 .d-flex {
-    flex-wrap: wrap;
+    flex-wrap: wrap ;
     justify-content: center;
 }
 
@@ -165,19 +208,19 @@ h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-button {
-    background-color: #da4ba3;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.mi-btn {
+    background-color: #da4ba3 !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
 }
 
-button:hover {
-    background-color: #b13d8b;
+.mi-btn:hover {
+    background-color: #721152 !important;
 }
 
 #nosotros p {
@@ -267,4 +310,68 @@ body{
     height: auto;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+.btn-outline-secondary {
+    border-color: #11010b !important;
+    color: #11010b !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #11010b !important; 
+    color: #fff !important;
+}
+
+#formulario-registro {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #422638;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#formulario-registro h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffdef4;
+}
+
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffdef4;
+}
+
+.campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #da4ba3;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #331729;
+    color: #ffffff;
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: #ffdef4;
+    box-shadow: 0 0 5px #da4ba3;
+}
+
+
+.error-message {
+    font-size: 14px;
+    color: #ff7373;
+    margin-top: 5px;
+    display: none;
+}
+
 
